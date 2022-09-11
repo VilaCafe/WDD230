@@ -29,11 +29,13 @@ header{
 header, footer{
     text-align: center;
     background-color: #205960;
-    color: white;    
+    color: white;  
+      
 }
 
 header img{
-    width: 150px;
+    width: 100px;
+    
     height: auto;  
 }
 
