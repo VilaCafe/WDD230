@@ -24,6 +24,10 @@ header, nav, main, footer {
 
 header{
     margin-top:10px;
+    
+    grid-template-columns: 1fr 2fr;
+
+    align-content: center;
 }
 
 header, footer{
@@ -47,3 +51,4 @@ footer{
     font-size: 1rem;
     height: 90px; 
 }
+
