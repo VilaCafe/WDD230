@@ -19,43 +19,21 @@ function toggleMenu() {
 const x = document.getElementById("hamburgerBtn");
 x.onclick = toggleMenu;
 
-//weather summary 
-const tempNumber = parseFloat(document.getElementById("temp").textContent);
-const speedNumber = parseFloat(document.getElementById("speed").textContent);
+// //weather summary 
+// const tempNumber = parseFloat(document.getElementById("temp").textContent);
+// const speedNumber = parseFloat(document.getElementById("speed").textContent);
 
-let windchill = 35.74 + (0.6215 * tempNumber) - (35.75 * Math.pow(speedNumber, 
-0.16)) + (0.4275 * tempNumber * Math.pow(speedNumber, 0.16));
+// let windchill = 35.74 + (0.6215 * tempNumber) - (35.75 * Math.pow(speedNumber, 
+// 0.16)) + (0.4275 * tempNumber * Math.pow(speedNumber, 0.16));
 
-windchill = Math.round(windchill);
+// windchill = Math.round(windchill);
 
-if(tempNumber<=50 && speedNumber >3) {
-    document.getElementById("chill").textContent = "Wind Chill is" + " " + windchill + "\xB0F";
+// if(tempNumber<=50 && speedNumber >3) {
+//     document.getElementById("chill").textContent = "Wind Chill is" + " " + windchill + "\xB0F";
 
-} else {
-    document.getElementById("chill").textContent = "No Wind Chill Today";
-}
-
-
-
-//LAST VISIT
-const visitDisplay = document.querySelector('#lastVisit')
-const mInDay = 1000 * 60 * 60 * 24;
-const today = Number(Date.now());
-console.log(`millisecond in a day is ${mInDay}`);
-
-let lastVisit = Number(window.localStorage.getItem("visit-is"));
-localStorage.setItem("visit-is", today);
-let difference = Math.round((now - lastVisit)/mInDay);
-console.log(difference)
-
-if (difference == 0) {
-    visitDisplay.textContent = `Thank you for visiting us!`
-} else {
-    visitDisplay.textContent = (`Days since last visit ${difference}`);
-}
-
-lastVisit++;
-localStorage.setItem("visits-ls", lastVisit);
+// } else {
+//     document.getElementById("chill").textContent = "No Wind Chill Today";
+// }
 
 //OVERLAY
 
@@ -74,6 +52,12 @@ localStorage.setItem("visits-ls", lastVisit);
     } else {
         element.classList.add("hideme");        
     }
+
+
+
+
+
+
 
 
 
