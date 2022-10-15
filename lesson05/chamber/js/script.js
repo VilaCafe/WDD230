@@ -69,7 +69,7 @@ localStorage.setItem("visits-ls", lastVisit);
 
     if (dayNumber == 1) {
         element.classList.add("showme");        
-    } if (dayNumber == 6) {
+    } if (dayNumber == 3) {
         element.classList.add("showme");
     } else {
         element.classList.add("hideme");        
