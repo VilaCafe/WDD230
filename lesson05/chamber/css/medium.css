@@ -1,6 +1,8 @@
 /*35rem is also 560px when basefont is 16px */
 @media only screen and (min-width: 35rem) {  
-      
+     /*BOTÃO BANNER*/
+     #message {width: 370px; top: 100%; left: 30%;}  
+     /*BOTÃO BANNER*/       
 
     .banner {grid-column: 1 / 3; grid-row: 2 / 4;}   
     .weather {grid-column: 1 / 2; grid-row: 4 / 5;}

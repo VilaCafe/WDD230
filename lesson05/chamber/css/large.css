@@ -9,6 +9,11 @@
 
     main {grid-template-columns: 1fr 1fr 1fr 1fr;}
 
+        /*BOTÃO BANNER*/
+    #message {width: 300px; top: 100%; left: 40%;}  
+        /*BOTÃO BANNER*/
+    
+
     .weather {grid-column: 1 / 2; grid-row: 2 / 3;}
     .weather img {width: 35%; height: auto;}
     .banner {grid-column: 2 / 4; grid-row: 2 / 4;}
