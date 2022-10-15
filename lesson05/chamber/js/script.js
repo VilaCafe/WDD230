@@ -19,21 +19,21 @@ function toggleMenu() {
 const x = document.getElementById("hamburgerBtn");
 x.onclick = toggleMenu;
 
- //weather summary 
- const tempNumber = parseFloat(document.getElementById("temp").textContent);
- const speedNumber = parseFloat(document.getElementById("speed").textContent);
+//weather summary 
+const tempNumber = parseFloat(document.getElementById("temp").textContent);
+const speedNumber = parseFloat(document.getElementById("speed").textContent);
 
- let windchill = 35.74 + (0.6215 * tempNumber) - (35.75 * Math.pow(speedNumber, 
- 0.16)) + (0.4275 * tempNumber * Math.pow(speedNumber, 0.16));
+let windchill = 35.74 + (0.6215 * tempNumber) - (35.75 * Math.pow(speedNumber, 
+0.16)) + (0.4275 * tempNumber * Math.pow(speedNumber, 0.16));
 
- windchill = Math.round(windchill);
+windchill = Math.round(windchill);
 
- if(tempNumber<=50 && speedNumber >3) {
-     document.getElementById("chill").textContent = "Wind Chill is" + " " + windchill + "\xB0F";
+if(tempNumber<=50 && speedNumber >3) {
+    document.getElementById("chill").textContent = "Wind Chill is" + " " + windchill + "\xB0F";
 
- } else {
-     document.getElementById("chill").textContent = "No Wind Chill Today";
- }
+} else {
+    document.getElementById("chill").textContent = "No Wind Chill Today";
+}
 
 
 
@@ -69,7 +69,7 @@ localStorage.setItem("visits-ls", lastVisit);
 
     if (dayNumber == 1) {
         element.classList.add("showme");        
-    } if (dayNumber == 3) {
+    } if (dayNumber == 6) {
         element.classList.add("showme");
     } else {
         element.classList.add("hideme");        
