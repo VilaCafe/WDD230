@@ -53,13 +53,3 @@ x.onclick = toggleMenu;
         element.classList.add("hideme");        
     }
 
-
-//
-
-
-
-
-
-
-
-
