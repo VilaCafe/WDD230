@@ -188,7 +188,7 @@ footer {
     color: black;    
     padding: .5rem 2%;   
     display: grid;
-    grid-template-columns: 75px auto;
+    grid-template-columns: 1700px auto;
     margin: auto;
     max-width: 100%;       
 }
