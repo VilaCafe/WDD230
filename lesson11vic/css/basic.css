@@ -1,0 +1,17 @@
+
+body {
+    background-color: rgba(167, 147, 117, 0.658);
+}
+img {
+    width: 400px;
+    height: 267px;
+    display: block;
+    margin: 10px auto;
+}
+h1 {
+    color: rgb(61, 46, 26);
+    text-align: center;
+}
+
+img {border: #000;; }
+img:hover {box-shadow: 0 0 50px rgb(39, 39, 39);}
