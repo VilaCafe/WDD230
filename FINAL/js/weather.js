@@ -9,7 +9,7 @@ const captionDesc = document.querySelector('figcaption');
  const temp3 = document.querySelector('#temp3');
  const temp4 = document.querySelector('#temp4');
 
-const url = "https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&appid=02b739bf12eedc884c1f3c1ef6f4146b&units=imperial"; 
+const url = "https://api.openweathermap.org/data/2.5/onecall?lat=33.154&lon=-117.354&appid=02b739bf12eedc884c1f3c1ef6f4146b&units=imperial"; 
 fetch(url)
 .then((response) => response.json())
 .then((weatherInform) => {
