@@ -282,6 +282,16 @@ form label.info2 input:required:valid {border: #436c89 solid 2px;}
     padding: 30px;
 }
 
+.active{
+    display: block;
+    font-size: 0.7rem;    
+    border-radius: 5px;
+    padding: 12px;    
+    color: grey;
+    width: 92%;     
+    background-color: rgba(255, 253, 253, 0.699);
+    font-style: italic
+}
 
 /*FOOTER -------------------------------------------------------------------------------------------------------------------------------------*/
 footer {  
