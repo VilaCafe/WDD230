@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Home Page">
+    <meta name="description" content="Fresh">
     <meta name="author" content="VIctor Ferreira">
 
     <!--Google Fonts-->
@@ -28,9 +28,10 @@
         <a href="index.html"><img src="image/logo.png" alt="logo" width="150"></a>
         
         <ul>
-            <li class="active"><a href="index.html">Home</a></li>            
+            <li><a href="index.html">Home</a></li>            
             <li><a href="fresh.html">Fresh</a></li>
             <li><a href="aboutus.html">About us</a></li>
+            
             
         </ul>
     </nav>
@@ -38,46 +39,37 @@
 
 <!--main--> 
 
+<main>
+    <section class="info2" >
+        <h2 id="form-head" class="bigger-h">Drink Maker!</h2>
+        <form id="mix-form">
+            <input type="date" name="date" hidden id="date" class = "info2">
+            <label class = "info2"for="fName">First Name<span class="info2">*</span> <br>
+                <input name="fName" type="text" class="input-box" id='fName' required>
+            </label>
+            <label class = "info2" for="email">Email<span class="info2">*</span><br>
+                <input name="email" type="email" id="email" class="input-box" required>
+            </label>
+            <label class = "info2" for="phone">Phone Number<span class="info2">*</span><br>
+                <input name="phone" type="tel" id="phone" class="input-box" required>
+            </label>
+            <div id="fruit-selector">
+                <label class = "info2"><p>Select up to 3 fruits:</p></label>
 
-<section class="container-form">
-    <h2 id="title-registro">Fresh Maker</h2>
-    
-        <form method="get" action="thankyou.html">
-            <fieldset id="reserv">
-                <legend>Personal Information</legend>
-    
-                <label class="info2"> First name:* <input type="text" name="fullname"/></label>        
-              
-                <label class="info2"> Phone:* <input type="phone" name="phone"/></label>
-
-                <label class="info2"> Country/City:* <input type="location" name="location"/></label>
-                
-                <label class="info2"> Email:* <input type="email" name="email"/></label>
-                
-                <label class="info2"> Other Instructions:* <input type="instruct" name="instruct"/></label>
-                
-                
-                <label class="info2"> Choose Fruit 1
-                    <select id ="select" name = "name" multiple></select>
-                    
-                </label>
-                
-                <label class="info2"> Choose Fruit 2
-                    <select id ="select2" name = "name" multiple></select>
-                    <option></option>
-                </label>
-
-                <label class="info2"> Choose Fruit 3
-                    <select id ="select" name = "name"></select>
-                    <option></option>
-                </label>
-
-
-                <input id="btn-reserv" type="submit" value="Submit" class="submit" />
-            </fieldset>
-        </form>        
-</section>
-
+            </div>
+            <label class="info2" for="add-instructions"> <p>Special requests</p> 
+            <textarea name="add-instructions" id="add-instructions" cols="30" rows="10" class="input-box"></textarea></label> <br>
+            <input type="button" value="Fresh!" class="info2" id="mix-btn">
+        </form>
+        
+        <section id="form-output" class="true-center">
+            <h2 class="bigger-h">Output</h2>
+            <div id="output">
+                <p></p>
+            </div>
+        </section>
+    </section>
+</main>
 
 
 
@@ -127,7 +119,7 @@
 </footer>
 
 <script src="js/script.js"></script>
-
+<script src="js/fresh.js"></script>
 <script src="js/listscript.js"></script>  
 
 

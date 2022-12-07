@@ -1,7 +1,7 @@
-let dropdown = document.getElementById('select','select2');
+let dropdown = document.getElementById('select');
 dropdown.length = 0;
 
-let defaultOption = document.createElement('option','option2');
+let defaultOption = document.createElement('option');
 defaultOption.text = 'Choose Fruit';
 
 dropdown.add(defaultOption);

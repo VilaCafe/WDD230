@@ -293,6 +293,17 @@ form label.info2 input:required:valid {border: #436c89 solid 2px;}
     font-style: italic
 }
 
+.true-center-sm{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+
 /*FOOTER -------------------------------------------------------------------------------------------------------------------------------------*/
 footer {  
     display: flex;
